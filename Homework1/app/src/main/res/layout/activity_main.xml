@@ -11,8 +11,28 @@
     android:orientation="vertical"
     tools:context="com.example.jeff.homework1.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <LinearLayout
+        android:id="@+id/inner_layout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_text"/>
+
+        <TextView
+            android:id="@+id/name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name_text" />
+
+        <Button
+            android:id="@+id/name_button"
+            android:layout_height="94dp"
+            android:layout_width="197dp"
+            android:text="@string/button_text">
+            </Button>
+    </LinearLayout>
+
 </LinearLayout>
